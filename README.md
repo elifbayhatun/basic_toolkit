@@ -28,3 +28,4 @@
 --store'u projeye main.js de tanıt(provider)
 # basic_redux-toolkit
 # basic_redux-toolkit
+# basic_redux-toolkit
