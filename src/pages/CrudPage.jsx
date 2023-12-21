@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
+import FormModal from "../components/Modal";
 const CrudPage = () => {
+  //eleman ekleme modal state'i
+  const [ShowModal, setShowModal] = useState(false);
+  //modalı kapatacak fonksiyon
+  const handleClose = () => {
+    setShowModal(false);
+  };
   return (
     <div className="px-3">
-      <Button variant="success" className="my-3">
+      <FormModal show={ShowModal} handleClose={handleClose} />
+      <Button
+        onClick={() => setShowModal(true)}
+        variant="success"
+        className="my-3"
+      >
         yeni görev ekle
       </Button>
       <Table variant="dark">
