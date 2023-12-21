@@ -1,10 +1,18 @@
+import { Routes, BrowserRouter, Route } from "react-router-dom";
 import Counter from "./pages/Counter";
+import CrudPage from "./pages/CrudPage";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <h1>REDUX TOOLKİT</h1>
-      <Counter />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<CrudPage />} />
+          <Route path="counter" element={<Counter />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

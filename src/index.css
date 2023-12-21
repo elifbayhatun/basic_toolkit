@@ -11,16 +11,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  display: grid;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: #242424;
-  color: white;
+  background: #242424 !important;
+  color: white !important;
+  overflow-x: hidden;
 }
 
 h1 {
