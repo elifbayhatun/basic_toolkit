@@ -11,7 +11,7 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className="">
-            <Link to="/">CRUD UYGULAMASI</Link>
+            <Link to="/">CRUD UYGULAMASI</Link> <br />
             <Link to="/counter">SAYAÇ UYGULAMASI</Link>
           </Navbar.Text>
         </Navbar.Collapse>
